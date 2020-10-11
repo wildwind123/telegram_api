@@ -12,9 +12,9 @@ import (
 )
 
 func main()  {
-	method.Token = "1157966567:AAFgsKWxld05buXi7h9qft9fwa6EKVxfx-w"
+	method.Token = "token"
 	var SendMessage method.SendMessage
-	params, err := SendMessage.GetParams("@ForMe1232", "test")
+	params, err := SendMessage.GetParams("test", "test")
 	if err != nil {
 		fmt.Println(err)
 	}
