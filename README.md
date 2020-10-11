@@ -4,10 +4,17 @@ contain only one method sendMessage
 example code
 
 ```
+package main
+
+import (
+	"fmt"
+	"github.com/wildwind123/telegram_api/api/method"
+)
+
 func main()  {
-	method.Token = "token"
+	method.Token = "1157966567:AAFgsKWxld05buXi7h9qft9fwa6EKVxfx-w"
 	var SendMessage method.SendMessage
-	params, err := SendMessage.GetParams("channelId", "Message")
+	params, err := SendMessage.GetParams("@ForMe1232", "test")
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -19,4 +26,5 @@ func main()  {
 	}
 	fmt.Println(response)
 }
+
 ```
